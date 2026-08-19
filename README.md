@@ -3,8 +3,7 @@
 Arus Transfer is a small data-transfer engine. See [DESIGN.md](DESIGN.md) for
 the accepted direction.
 
-The repository currently contains only the development bootstrap. The first
-executable transfer slice will be implemented separately.
+The repository currently contains the Phase 1 in-memory transfer slice.
 
 ## Development
 
@@ -22,3 +21,9 @@ java -version
 ```
 
 No separate Gradle installation is required. CI runs the same check on Ubuntu.
+
+Run the in-memory transfer:
+
+```bash
+./gradlew -q run --args='run --records 10 --batch-size 4'
+```
