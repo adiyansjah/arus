@@ -1,5 +1,5 @@
 plugins {
-    java
+    application
 }
 
 group = "io.github.adiyansjah.arus"
@@ -12,6 +12,10 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
     }
+}
+
+application {
+    mainClass = "io.github.adiyansjah.arus.Main"
 }
 
 dependencies {
